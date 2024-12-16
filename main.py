@@ -4,7 +4,8 @@ from codeToPyParser import codeToPyParser
 from TraduceCode import TraduceCode
 
 def main():
-    input_file = "entrada1.txt"
+    print("Ingresa el nombre del archivo a traducir: ")
+    input_file = input()
 
     try:
         input_stream = FileStream(input_file, encoding="utf-8")
