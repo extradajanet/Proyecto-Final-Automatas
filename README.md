@@ -1,7 +1,7 @@
 # Proyecto-Final-Automatas
 Traductor de codigo a python
-Integrantes del equipo:
-Dana Paola Cardeña Aranda
+## Integrantes del equipo:
+Dana Paola Cardeña Aranda,
 Janet Estrada
 
 ## Descripción
