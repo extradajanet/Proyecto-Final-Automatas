@@ -119,7 +119,7 @@ class TraduceCode(codeToPyListener):
             for child in ctx.getChildren():
                 if isinstance(child, TerminalNode):
                     if child.symbol.type == codeToPyParser.REPETIR:
-                        print("for i in range(", end="")  # Start the loop in Python
+                        print("for i in range(1, ", end="")  # Start the loop in Python
                     elif child.symbol.type == codeToPyParser.ID:
                         numero_rep=child.getText() 
                     elif child.symbol.type == codeToPyParser.NUMERO:
