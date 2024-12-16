@@ -5,7 +5,7 @@ class TraduceCode(codeToPyListener):
 
     def __init__(self):
         # Open the output file in write mode
-        self.output_file = open('output1.py', 'w')
+        self.output_file = open('output.py', 'w')
         self.indentation_level = 0
         # Redirect print to the file
         sys.stdout = self.output_file
