@@ -1,0 +1,17 @@
+hacer calcular_promedio -- num1, num2, num3 -- {
+    definir suma = num1 + num2 + num3;
+    definir suma = num1 + num2 + num3;
+    definir promedio = suma / 3;
+    devolver promedio;
+}
+
+hacer main {
+    definir numero1 = 10;
+    definir numero2 = 20;
+    definir numero3 = 30;
+
+    definir resultado = calcular_promedio --numero1, numero2, numero3--;
+    mostrar "El promedio de los números es: " + resultado;
+}
+
+main--;

@@ -1,0 +1,27 @@
+hacer es_primo -- numero -- {
+    si (numero <= 1) {
+        devolver false;
+    }
+    definir i = 2;
+    repetir numero - 1 veces {
+        si (numero % i == 0) {
+            devolver false;
+        }
+        i = i + 1;
+    }
+    devolver true;
+}
+
+hacer main -- {
+    definir numero = 7;
+    definir resultado = es_primo --numero--;
+
+    si (resultado) {
+        mostrar numero + " es un número primo.";
+    }
+    sino {
+        mostrar numero + " no es un número primo.";
+    }
+}
+
+main--

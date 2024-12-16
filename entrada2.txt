@@ -1,0 +1,28 @@
+hacer calcular_promedio -- numeros -- {
+    definir suma = 0;
+    definir i = 0;
+    repetir 3 veces {
+        suma = suma + numeros[i];
+        i = i + 1;
+    }
+    definir promedio = suma / 3;
+    devolver promedio;
+}
+
+hacer main -- {
+    definir numero1 = 10;
+    definir numero2 = 20;
+    definir numero3 = 30;
+
+    definir lista = [10, 20, 30];
+    definir resultado = calcular_promedio --lista--;
+
+    si(resultado < 50) {
+        mostrar "El promedio no es aprobatorio: " + resultado;
+    }
+    sino {
+        mostrar "El promedio es aprobatorio: " + resultado;
+    }
+}
+
+main--
